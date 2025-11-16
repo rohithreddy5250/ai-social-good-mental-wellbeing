@@ -1,7 +1,5 @@
 # AI for Social Good - Mental Well-being Analysis
 
-**Mahindra University Research Project**
-
 A machine learning system for analyzing social media content to identify emotional and behavioral patterns impacting mental well-being, with strong emphasis on ethical AI practices and privacy protection.
 
 ##  Project Overview
