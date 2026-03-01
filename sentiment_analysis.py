@@ -1,11 +1,4 @@
-"""
-AI for Social Good - Mental Well-being Analysis
-Sentiment Analysis and Text Processing Module
-Mahindra University
 
-This module provides functionality for analyzing social media content
-to identify emotional and behavioral patterns.
-"""
 
 import pandas as pd
 import numpy as np
@@ -14,12 +7,9 @@ import re
 from collections import Counter
 
 class SentimentAnalyzer:
-    """
-    A sentiment analysis system for social media content with privacy-preserving features.
-    """
-    
+
     def __init__(self):
-        # Simple sentiment lexicon (expand with proper datasets)
+
         self.positive_words = {'happy', 'joy', 'love', 'excellent', 'good', 'wonderful', 
                                'positive', 'fortunate', 'correct', 'superior', 'great'}
         self.negative_words = {'sad', 'hate', 'bad', 'terrible', 'awful', 'negative',
@@ -28,8 +18,6 @@ class SentimentAnalyzer:
                                        'overwhelmed', 'hopeless', 'worried', 'isolated'}
     
     def preprocess_text(self, text: str) -> str:
-        """Clean and preprocess text data."""
-        # Convert to lowercase
         text = text.lower()
         # Remove URLs
         text = re.sub(r'http\S+|www\S+|https\S+', '', text, flags=re.MULTILINE)
